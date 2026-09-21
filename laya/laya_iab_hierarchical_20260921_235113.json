@@ -1,0 +1,1035 @@
+{
+  "benchmark": "Laya IAB v3 hierarchical Choice beam search",
+  "generated_at": "2026-09-21T23:51:13.249119",
+  "entity": "NVIDIA",
+  "search_results": [
+    "NVIDIA is described as a technology company centered on GPUs, accelerated computing and artificial intelligence.",
+    "Results discuss NVIDIA data-center AI infrastructure for model training and inference.",
+    "GeForce and RTX products are associated with PC gaming, graphics and professional visualization.",
+    "NVIDIA DGX and HGX platforms combine GPUs, CPUs, networking and memory for AI data centers.",
+    "CUDA is described as NVIDIA's software platform and programming ecosystem for accelerated computing.",
+    "NVIDIA networking products support high-speed data-center and AI-cluster interconnects.",
+    "Jetson products are used for edge AI, robotics and embedded autonomous systems.",
+    "NVIDIA DRIVE technology is associated with autonomous and driverless vehicle computing.",
+    "Results discuss digital twins, simulation and physical-AI systems for industrial and robotics applications.",
+    "NVIDIA works with cloud providers such as AWS to deploy GPU-based AI and compute infrastructure."
+  ],
+  "taxonomy": {
+    "source": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Content%20Taxonomies/Content%20Taxonomy%203.0.tsv",
+    "official_categories": 703,
+    "used_categories": 700,
+    "roots": 35,
+    "tier_counts": {
+      "1": 35,
+      "2": 322,
+      "3": 273,
+      "4": 70
+    },
+    "widest_node": {
+      "name": "Sports",
+      "children": 51
+    }
+  },
+  "config": {
+    "max_choice_options": 10,
+    "beam_width": 10,
+    "children_per_parent": 3,
+    "verify_top_k": 20
+  },
+  "runtime": {
+    "model_load_seconds": 18.25964030000023,
+    "system_one_calls": 15,
+    "questions": 41,
+    "input_tokens": 18441,
+    "mean_tokens_per_question": 449.780487804878,
+    "inference_seconds": 0.6025644000001193,
+    "wall_seconds": 0.6077103000002353,
+    "batches": [
+      {
+        "label": "root tournament r1",
+        "questions": 4,
+        "input_tokens": 1928,
+        "seconds": 0.07041799999979048
+      },
+      {
+        "label": "root tournament r2",
+        "questions": 2,
+        "input_tokens": 922,
+        "seconds": 0.034675700000207144
+      },
+      {
+        "label": "root final",
+        "questions": 1,
+        "input_tokens": 482,
+        "seconds": 0.03867039999977351
+      },
+      {
+        "label": "node_596 final",
+        "questions": 1,
+        "input_tokens": 482,
+        "seconds": 0.03618219999998473
+      },
+      {
+        "label": "node_552 final",
+        "questions": 1,
+        "input_tokens": 482,
+        "seconds": 0.027133799999774055
+      },
+      {
+        "label": "node_464 final",
+        "questions": 1,
+        "input_tokens": 482,
+        "seconds": 0.02642969999988054
+      },
+      {
+        "label": "node_483 tournament r1",
+        "questions": 6,
+        "input_tokens": 2801,
+        "seconds": 0.04503709999971761
+      },
+      {
+        "label": "node_483 tournament r2",
+        "questions": 2,
+        "input_tokens": 964,
+        "seconds": 0.03564730000016425
+      },
+      {
+        "label": "node_483 final",
+        "questions": 1,
+        "input_tokens": 482,
+        "seconds": 0.027182300000276882
+      },
+      {
+        "label": "node_123 final",
+        "questions": 1,
+        "input_tokens": 482,
+        "seconds": 0.02802670000028229
+      },
+      {
+        "label": "node_599 final",
+        "questions": 1,
+        "input_tokens": 482,
+        "seconds": 0.03972199999998338
+      },
+      {
+        "label": "node_487 final",
+        "questions": 1,
+        "input_tokens": 482,
+        "seconds": 0.027708200000233774
+      },
+      {
+        "label": "node_602 tournament r1",
+        "questions": 2,
+        "input_tokens": 964,
+        "seconds": 0.04107179999982691
+      },
+      {
+        "label": "node_602 final",
+        "questions": 1,
+        "input_tokens": 482,
+        "seconds": 0.03704220000008718
+      },
+      {
+        "label": "final NOUL verification",
+        "questions": 16,
+        "input_tokens": 6524,
+        "seconds": 0.08761700000013661
+      }
+    ],
+    "peak_cuda_allocated_gib": 2.4688515663146973,
+    "peak_cuda_reserved_gib": 2.904296875
+  },
+  "paths": [
+    {
+      "leaf_id": "597",
+      "leaf_name": "Artificial Intelligence",
+      "tier": 2,
+      "path": [
+        "Technology & Computing",
+        "Artificial Intelligence"
+      ],
+      "path_ids": [
+        "596",
+        "597"
+      ],
+      "local_probabilities": [
+        0.5801387102187437,
+        0.3192319231923193
+      ],
+      "joint_probability": 0.18519879618144122,
+      "geometric_mean_probability": 0.4303472971699035,
+      "verification_noul": 0.4798,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.5206999999999999,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.25320000000000004,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.38050000000000006,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.31923192319231924,
+            "group_size": 6
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "600",
+      "leaf_name": "Computer Networking",
+      "tier": 3,
+      "path": [
+        "Technology & Computing",
+        "Computing",
+        "Computer Networking"
+      ],
+      "path_ids": [
+        "596",
+        "599",
+        "600"
+      ],
+      "local_probabilities": [
+        0.5801387102187437,
+        0.3776377637763777,
+        0.21699999999999997
+      ],
+      "joint_probability": 0.04754085588994469,
+      "geometric_mean_probability": 0.3622616259611352,
+      "verification_noul": 0.5153,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.5206999999999999,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.25320000000000004,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.38050000000000006,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.37763776377637764,
+            "group_size": 6
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.217,
+            "group_size": 9
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "601",
+      "leaf_name": "Computer Peripherals",
+      "tier": 3,
+      "path": [
+        "Technology & Computing",
+        "Computing",
+        "Computer Peripherals"
+      ],
+      "path_ids": [
+        "596",
+        "599",
+        "601"
+      ],
+      "local_probabilities": [
+        0.5801387102187437,
+        0.3776377637763777,
+        0.18569999999999998
+      ],
+      "joint_probability": 0.04068358036296188,
+      "geometric_mean_probability": 0.34393237235053925,
+      "verification_noul": 0.497,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.5206999999999999,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.25320000000000004,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.38050000000000006,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.37763776377637764,
+            "group_size": 6
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.1857,
+            "group_size": 9
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "489",
+      "leaf_name": "College Basketball",
+      "tier": 3,
+      "path": [
+        "Sports",
+        "College Sports",
+        "College Basketball"
+      ],
+      "path_ids": [
+        "483",
+        "487",
+        "489"
+      ],
+      "local_probabilities": [
+        0.08609193622161342,
+        0.7267310400020928,
+        0.4872
+      ],
+      "joint_probability": 0.030482000439033045,
+      "geometric_mean_probability": 0.312378514276587,
+      "verification_noul": 0.4739,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.15479999999999997,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.466,
+            "group_size": 2
+          },
+          {
+            "round": "final",
+            "group_probability": 0.10320000000000001,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": 1,
+            "group_probability": 0.597059705970597,
+            "group_size": 10
+          },
+          {
+            "round": 2,
+            "group_probability": 0.21500000000000002,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.45005499450055,
+            "group_size": 6
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.4872,
+            "group_size": 3
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "611",
+      "leaf_name": "Databases",
+      "tier": 4,
+      "path": [
+        "Technology & Computing",
+        "Computing",
+        "Software and Applications",
+        "Databases"
+      ],
+      "path_ids": [
+        "596",
+        "599",
+        "602",
+        "611"
+      ],
+      "local_probabilities": [
+        0.5801387102187437,
+        0.3776377637763777,
+        0.14179999999999998,
+        0.26998090460152996
+      ],
+      "joint_probability": 0.008387191156310647,
+      "geometric_mean_probability": 0.30262453514059184,
+      "verification_noul": 0.502,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.5206999999999999,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.25320000000000004,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.38050000000000006,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.37763776377637764,
+            "group_size": 6
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.1418,
+            "group_size": 9
+          }
+        ],
+        [
+          {
+            "round": 1,
+            "group_probability": 0.20012001200120014,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.2671,
+            "group_size": 6
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "490",
+      "leaf_name": "College Baseball",
+      "tier": 3,
+      "path": [
+        "Sports",
+        "College Sports",
+        "College Baseball"
+      ],
+      "path_ids": [
+        "483",
+        "487",
+        "490"
+      ],
+      "local_probabilities": [
+        0.08609193622161342,
+        0.7267310400020928,
+        0.36999999999999994
+      ],
+      "joint_probability": 0.023149302468066967,
+      "geometric_mean_probability": 0.28500072829635154,
+      "verification_noul": 0.4734,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.15479999999999997,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.466,
+            "group_size": 2
+          },
+          {
+            "round": "final",
+            "group_probability": 0.10320000000000001,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": 1,
+            "group_probability": 0.597059705970597,
+            "group_size": 10
+          },
+          {
+            "round": 2,
+            "group_probability": 0.21500000000000002,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.45005499450055,
+            "group_size": 6
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.37,
+            "group_size": 3
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "598",
+      "leaf_name": "Augmented Reality",
+      "tier": 2,
+      "path": [
+        "Technology & Computing",
+        "Augmented Reality"
+      ],
+      "path_ids": [
+        "596",
+        "598"
+      ],
+      "local_probabilities": [
+        0.5801387102187437,
+        0.13861386138613863
+      ],
+      "joint_probability": 0.08041526676299418,
+      "geometric_mean_probability": 0.2835758571581759,
+      "verification_noul": 0.4877,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.5206999999999999,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.25320000000000004,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.38050000000000006,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.13861386138613863,
+            "group_size": 6
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "612",
+      "leaf_name": "Desktop Publishing",
+      "tier": 4,
+      "path": [
+        "Technology & Computing",
+        "Computing",
+        "Software and Applications",
+        "Desktop Publishing"
+      ],
+      "path_ids": [
+        "596",
+        "599",
+        "602",
+        "612"
+      ],
+      "local_probabilities": [
+        0.5801387102187437,
+        0.3776377637763777,
+        0.14179999999999998,
+        0.1914747172304366
+      ],
+      "joint_probability": 0.005948328298930735,
+      "geometric_mean_probability": 0.27771461307051404,
+      "verification_noul": 0.5138,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.5206999999999999,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.25320000000000004,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.38050000000000006,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.37763776377637764,
+            "group_size": 6
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.1418,
+            "group_size": 9
+          }
+        ],
+        [
+          {
+            "round": 1,
+            "group_probability": 0.16751675167516755,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.2263,
+            "group_size": 6
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "615",
+      "leaf_name": "Operating Systems",
+      "tier": 4,
+      "path": [
+        "Technology & Computing",
+        "Computing",
+        "Software and Applications",
+        "Operating Systems"
+      ],
+      "path_ids": [
+        "596",
+        "599",
+        "602",
+        "615"
+      ],
+      "local_probabilities": [
+        0.5801387102187437,
+        0.3776377637763777,
+        0.14179999999999998,
+        0.1683103830548497
+      ],
+      "joint_probability": 0.0052287081501426,
+      "geometric_mean_probability": 0.26890482839774227,
+      "verification_noul": 0.4754,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.5206999999999999,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.25320000000000004,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.38050000000000006,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.37763776377637764,
+            "group_size": 6
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.1418,
+            "group_size": 9
+          }
+        ],
+        [
+          {
+            "round": 1,
+            "group_probability": 0.2683,
+            "group_size": 6
+          },
+          {
+            "round": "final",
+            "group_probability": 0.1242,
+            "group_size": 6
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "470",
+      "leaf_name": "Geology",
+      "tier": 2,
+      "path": [
+        "Science",
+        "Geology"
+      ],
+      "path_ids": [
+        "464",
+        "470"
+      ],
+      "local_probabilities": [
+        0.13939214927242868,
+        0.33410000000000006
+      ],
+      "joint_probability": 0.046570917071918426,
+      "geometric_mean_probability": 0.21580295890445625,
+      "verification_noul": 0.4872,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.21897810218978103,
+            "group_size": 10
+          },
+          {
+            "round": 2,
+            "group_probability": 0.23060000000000003,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.23870000000000002,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.3341,
+            "group_size": 9
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "488",
+      "leaf_name": "College Football",
+      "tier": 3,
+      "path": [
+        "Sports",
+        "College Sports",
+        "College Football"
+      ],
+      "path_ids": [
+        "483",
+        "487",
+        "488"
+      ],
+      "local_probabilities": [
+        0.08609193622161342,
+        0.7267310400020928,
+        0.14279999999999998
+      ],
+      "joint_probability": 0.008934379439026925,
+      "geometric_mean_probability": 0.20750160690894298,
+      "verification_noul": 0.4769,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.15479999999999997,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.466,
+            "group_size": 2
+          },
+          {
+            "round": "final",
+            "group_probability": 0.10320000000000001,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": 1,
+            "group_probability": 0.597059705970597,
+            "group_size": 10
+          },
+          {
+            "round": 2,
+            "group_probability": 0.21500000000000002,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.45005499450055,
+            "group_size": 6
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.1428,
+            "group_size": 3
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "576",
+      "leaf_name": "Designer Clothing",
+      "tier": 2,
+      "path": [
+        "Style & Fashion",
+        "Designer Clothing"
+      ],
+      "path_ids": [
+        "552",
+        "576"
+      ],
+      "local_probabilities": [
+        0.17279790163459946,
+        0.216021602160216
+      ],
+      "joint_probability": 0.03732807956102958,
+      "geometric_mean_probability": 0.1932047607100549,
+      "verification_noul": 0.4529,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.16239999999999996,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.534,
+            "group_size": 2
+          },
+          {
+            "round": "final",
+            "group_probability": 0.17230000000000004,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.21602160216021604,
+            "group_size": 10
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "578",
+      "leaf_name": "High Fashion",
+      "tier": 2,
+      "path": [
+        "Style & Fashion",
+        "High Fashion"
+      ],
+      "path_ids": [
+        "552",
+        "578"
+      ],
+      "local_probabilities": [
+        0.17279790163459946,
+        0.1847184718471847
+      ],
+      "joint_probability": 0.031918964328343354,
+      "geometric_mean_probability": 0.1786587930339376,
+      "verification_noul": 0.4661,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.16239999999999996,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.534,
+            "group_size": 2
+          },
+          {
+            "round": "final",
+            "group_probability": 0.17230000000000004,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.18471847184718473,
+            "group_size": 10
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "577",
+      "leaf_name": "Fashion Trends",
+      "tier": 2,
+      "path": [
+        "Style & Fashion",
+        "Fashion Trends"
+      ],
+      "path_ids": [
+        "552",
+        "577"
+      ],
+      "local_probabilities": [
+        0.17279790163459946,
+        0.1481148114811481
+      ],
+      "joint_probability": 0.025593928624946673,
+      "geometric_mean_probability": 0.15998102582789833,
+      "verification_noul": 0.4617,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.16239999999999996,
+            "group_size": 5
+          },
+          {
+            "round": 2,
+            "group_probability": 0.534,
+            "group_size": 2
+          },
+          {
+            "round": "final",
+            "group_probability": 0.17230000000000004,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.14811481148114813,
+            "group_size": 10
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "466",
+      "leaf_name": "Chemistry",
+      "tier": 2,
+      "path": [
+        "Science",
+        "Chemistry"
+      ],
+      "path_ids": [
+        "464",
+        "466"
+      ],
+      "local_probabilities": [
+        0.13939214927242868,
+        0.1453
+      ],
+      "joint_probability": 0.020253679289283892,
+      "geometric_mean_probability": 0.14231542182519746,
+      "verification_noul": 0.4725,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.21897810218978103,
+            "group_size": 10
+          },
+          {
+            "round": 2,
+            "group_probability": 0.23060000000000003,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.23870000000000002,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.1453,
+            "group_size": 9
+          }
+        ]
+      ]
+    },
+    {
+      "leaf_id": "465",
+      "leaf_name": "Biological Sciences",
+      "tier": 2,
+      "path": [
+        "Science",
+        "Biological Sciences"
+      ],
+      "path_ids": [
+        "464",
+        "465"
+      ],
+      "local_probabilities": [
+        0.13939214927242868,
+        0.1375
+      ],
+      "joint_probability": 0.01916642052495895,
+      "geometric_mean_probability": 0.13844284208639662,
+      "verification_noul": 0.4744,
+      "tournament_traces": [
+        [
+          {
+            "round": 1,
+            "group_probability": 0.21897810218978103,
+            "group_size": 10
+          },
+          {
+            "round": 2,
+            "group_probability": 0.23060000000000003,
+            "group_size": 10
+          },
+          {
+            "round": "final",
+            "group_probability": 0.23870000000000002,
+            "group_size": 5
+          }
+        ],
+        [
+          {
+            "round": "final",
+            "group_probability": 0.1375,
+            "group_size": 9
+          }
+        ]
+      ]
+    }
+  ]
+}
