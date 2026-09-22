@@ -1,0 +1,146 @@
+====================================================================================================================
+LAYA x IAB CONTENT TAXONOMY 3.0 — HIERARCHICAL CHOICE BENCHMARK
+====================================================================================================================
+Python:             3.11.0
+PyTorch:            2.14.0+cu126
+CUDA build:         12.6
+CUDA available:     True
+GPU:                 NVIDIA GeForce RTX 4090
+GPU memory:          22.49 GiB
+
+[taxonomy] official categories parsed: 703
+[taxonomy] categories used:            700
+[taxonomy] roots:                      35
+[taxonomy] tier counts:                T1=35, T2=322, T3=273, T4=70
+[taxonomy] widest node:               Sports -> 51 children
+[config] max Choice options:          10
+[config] beam width:                  10
+[config] children / parent kept:      3
+[config] final NOUL verify top-k:     20
+
+[model] loading from: E:\GIT\Nowy folder\Laya_KG_extraction_demo\Laya_KG_extraction_demo\laya
+[model] device:       cuda
+[model] load time:    18.260 s
+[model] max_len:      512
+[model] head_max_len: 192
+[model] choice 11+ T: 0.10058280825614929
+
+[run] warmup                         |   1 q |   0.376 s |     2.7 q/s |  479.0 tok/q
+
+====================================================================================================================
+HIERARCHICAL CHOICE / BEAM SEARCH
+====================================================================================================================
+[run] root tournament r1             |   4 q |   0.070 s |    56.8 q/s |  482.0 tok/q
+[run] root tournament r2             |   2 q |   0.035 s |    57.7 q/s |  461.0 tok/q
+[run] root final                     |   1 q |   0.039 s |    25.9 q/s |  482.0 tok/q
+
+[beam] root survivors
+   1. 0.5801 | Technology & Computing
+   2. 0.1728 | Style & Fashion
+   3. 0.1394 | Science
+   4. 0.0861 | Sports
+   5. 0.0216 | Careers
+
+[beam] expanding to Tier 2
+[run] node_596 final                 |   1 q |   0.036 s |    27.6 q/s |  482.0 tok/q
+[run] node_552 final                 |   1 q |   0.027 s |    36.9 q/s |  482.0 tok/q
+[run] node_464 final                 |   1 q |   0.026 s |    37.8 q/s |  482.0 tok/q
+[run] node_483 tournament r1         |   6 q |   0.045 s |   133.2 q/s |  466.8 tok/q
+[run] node_483 tournament r2         |   2 q |   0.036 s |    56.1 q/s |  482.0 tok/q
+[run] node_483 final                 |   1 q |   0.027 s |    36.8 q/s |  482.0 tok/q
+[run] node_123 final                 |   1 q |   0.028 s |    35.7 q/s |  482.0 tok/q
+   1. geom=0.4681 joint=0.219082 | Technology & Computing > Computing
+   2. geom=0.4303 joint=0.185199 | Technology & Computing > Artificial Intelligence
+   3. geom=0.2836 joint=0.080415 | Technology & Computing > Augmented Reality
+   4. geom=0.2501 joint=0.062566 | Sports > College Sports
+   5. geom=0.2158 joint=0.046571 | Science > Geology
+   6. geom=0.1932 joint=0.037328 | Style & Fashion > Designer Clothing
+   7. geom=0.1787 joint=0.031919 | Style & Fashion > High Fashion
+   8. geom=0.1600 joint=0.025594 | Style & Fashion > Fashion Trends
+   9. geom=0.1423 joint=0.020254 | Science > Chemistry
+  10. geom=0.1384 joint=0.019166 | Science > Biological Sciences
+
+[beam] expanding to Tier 3
+[run] node_599 final                 |   1 q |   0.040 s |    25.2 q/s |  482.0 tok/q
+[run] node_487 final                 |   1 q |   0.028 s |    36.1 q/s |  482.0 tok/q
+   1. geom=0.3623 joint=0.047541 | Technology & Computing > Computing > Computer Networking
+   2. geom=0.3439 joint=0.040684 | Technology & Computing > Computing > Computer Peripherals
+   3. geom=0.3144 joint=0.031066 | Technology & Computing > Computing > Software and Applications
+   4. geom=0.3124 joint=0.030482 | Sports > College Sports > College Basketball
+   5. geom=0.2850 joint=0.023149 | Sports > College Sports > College Baseball
+   6. geom=0.2075 joint=0.008934 | Sports > College Sports > College Football
+
+[beam] expanding to Tier 4
+[run] node_602 tournament r1         |   2 q |   0.041 s |    48.7 q/s |  482.0 tok/q
+[run] node_602 final                 |   1 q |   0.037 s |    27.0 q/s |  482.0 tok/q
+   1. geom=0.3026 joint=0.008387 | Technology & Computing > Computing > Software and Applications > Databases
+   2. geom=0.2777 joint=0.005948 | Technology & Computing > Computing > Software and Applications > Desktop Publishing
+   3. geom=0.2689 joint=0.005229 | Technology & Computing > Computing > Software and Applications > Operating Systems
+[run] final NOUL verification        |  16 q |   0.088 s |   182.6 q/s |  407.8 tok/q
+
+====================================================================================================================
+FINAL HIERARCHICAL PATHS
+====================================================================================================================
+  1. geom=0.4303 | joint=0.185199 | verify=0.4798
+     local: 0.580 × 0.319
+     Technology & Computing > Artificial Intelligence
+  2. geom=0.3623 | joint=0.047541 | verify=0.5153
+     local: 0.580 × 0.378 × 0.217
+     Technology & Computing > Computing > Computer Networking
+  3. geom=0.3439 | joint=0.040684 | verify=0.4970
+     local: 0.580 × 0.378 × 0.186
+     Technology & Computing > Computing > Computer Peripherals
+  4. geom=0.3124 | joint=0.030482 | verify=0.4739
+     local: 0.086 × 0.727 × 0.487
+     Sports > College Sports > College Basketball
+  5. geom=0.3026 | joint=0.008387 | verify=0.5020
+     local: 0.580 × 0.378 × 0.142 × 0.270
+     Technology & Computing > Computing > Software and Applications > Databases
+  6. geom=0.2850 | joint=0.023149 | verify=0.4734
+     local: 0.086 × 0.727 × 0.370
+     Sports > College Sports > College Baseball
+  7. geom=0.2836 | joint=0.080415 | verify=0.4877
+     local: 0.580 × 0.139
+     Technology & Computing > Augmented Reality
+  8. geom=0.2777 | joint=0.005948 | verify=0.5138
+     local: 0.580 × 0.378 × 0.142 × 0.191
+     Technology & Computing > Computing > Software and Applications > Desktop Publishing
+  9. geom=0.2689 | joint=0.005229 | verify=0.4754
+     local: 0.580 × 0.378 × 0.142 × 0.168
+     Technology & Computing > Computing > Software and Applications > Operating Systems
+ 10. geom=0.2158 | joint=0.046571 | verify=0.4872
+     local: 0.139 × 0.334
+     Science > Geology
+ 11. geom=0.2075 | joint=0.008934 | verify=0.4769
+     local: 0.086 × 0.727 × 0.143
+     Sports > College Sports > College Football
+ 12. geom=0.1932 | joint=0.037328 | verify=0.4529
+     local: 0.173 × 0.216
+     Style & Fashion > Designer Clothing
+ 13. geom=0.1787 | joint=0.031919 | verify=0.4661
+     local: 0.173 × 0.185
+     Style & Fashion > High Fashion
+ 14. geom=0.1600 | joint=0.025594 | verify=0.4617
+     local: 0.173 × 0.148
+     Style & Fashion > Fashion Trends
+ 15. geom=0.1423 | joint=0.020254 | verify=0.4725
+     local: 0.139 × 0.145
+     Science > Chemistry
+ 16. geom=0.1384 | joint=0.019166 | verify=0.4744
+     local: 0.139 × 0.138
+     Science > Biological Sciences
+
+====================================================================================================================
+BENCHMARK
+====================================================================================================================
+Model load time:          18.260 s
+system_one() calls:       15
+Choice/Noul questions:    41
+Pure inference time:      0.603 s
+Wall benchmark time:      0.608 s
+Question throughput:      68.04 q/s
+Token throughput:         30,604 tok/s
+Input tokens processed:   18,441
+Mean tokens/question:     449.8
+Peak CUDA allocated:      2.47 GiB
+Peak CUDA reserved:       2.90 GiB
